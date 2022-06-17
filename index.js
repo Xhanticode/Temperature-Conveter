@@ -15,13 +15,13 @@ function cConverter(valNum) {
 function fConverter(valNum) {
   valNum = parseFloat(valNum);
   celcius.value = eval(`(${valNum} - 32) / 1.8`);
-  kelvin.value = elav(`(${valNum} - 32) / 1.8 + 273.15`);
+  kelvin.value = eval(`(${valNum} - 32) / 1.8 + 273.15`);
 }
 
 // Kelvin to Celcius and Fahrenheit
 function kConverter(valNum) {
   valNum = parseFloat(valNum);
-  fahrenheit.value = eval(" 1.8 * (${valNum} - 273) + 32");
+  fahrenheit.value = eval(`1.8 * (${valNum} - 273) + 32`);
   celcius.value = eval(`${valNum} - 273.15`);
 }
 
