@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conveter</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="components">
+        <!-- Heading  -->
+        <h1 id="heading">Temperature Conveter</h1>
+
+        <div class="form">
+          <div class="calcInputs">
+            <!-- Metric  -->
+            
+              <input
+                class="form__input"
+                id="celcius"
+                placeholder="Celcius"
+                type="number"
+                oninput="cConverter(this.value)"
+                onchange="cConveter(this.value)" 
+              />
+              <input class="form__input"
+                id="fahrenheit"
+                placeholder="Farenheit"
+                type="number"
+                oninput="fConverter(this.value)"
+            onchange="fConveter(this.value)">
+                 
+              <input
+                class="form__input"
+                id="kelvin"
+                placeholder="Kelvin"
+                type="number"
+                oninput="kConverter(this.value)"
+                onchange="kConveter(this.value)"  
+              />
+            </select>
+          </div>
+        </div>
+
+        <!-- Reset button  -->
+        <div class="btn btn__secondary" id="btn" type="reset" onclick="reset()">
+          <p>Reset</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
